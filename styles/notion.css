@@ -403,3 +403,9 @@
 .notion-equation.notion-equation-block{
   align-items: center;
 }
+
+@media only screen and (max-width: 600px) {
+  .breadcrumbs .title {
+    display: none !important;
+  }
+}
