@@ -3,8 +3,8 @@ import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 import cs from 'classnames'
 import * as React from 'react'
-import { Breadcrumbs, Header, Search, useNotionContext } from 'react-notion-x'
 import ReactDOM from 'react-dom'
+import { Breadcrumbs, Header, Search, useNotionContext } from 'react-notion-x'
 
 import { isSearchEnabled, navigationLinks, navigationStyle } from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
@@ -72,15 +72,15 @@ export function NotionPageHeader({
 }) {
   const { components, mapPageUrl } = useNotionContext()
 
-  if (navigationStyle === 'default') {
-    return <Header block={block} />
-  }
-
   const [menuOpen, setMenuOpen] = React.useState(false)
 
   const handleCloseMenu = React.useCallback(() => {
     setMenuOpen(false)
   }, [])
+
+  if (navigationStyle === 'default') {
+    return <Header block={block} />
+  }
 
   return (
     <header className='notion-header'>
