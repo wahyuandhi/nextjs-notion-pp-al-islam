@@ -70,13 +70,13 @@ export default siteConfig({
       title: 'Artikel dan Media',
       pageId: '26f7e2ba73c78172b172c71c07046427'
     },
-    {
-      title: 'Santri',
-      pageId: '26f7e2ba73c78160b249ff46b51c29cf'
-    },
-    {
-      title: 'Alumni',
-      pageId: '26f7e2ba73c781dc8f38d2a1df4b1c7a'
-    }
+    // {
+    //   title: 'Santri',
+    //   pageId: '26f7e2ba73c78160b249ff46b51c29cf'
+    // },
+    // {
+    //   title: 'Alumni',
+    //   pageId: '26f7e2ba73c781dc8f38d2a1df4b1c7a'
+    // }
   ]
 })
