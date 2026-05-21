@@ -17,19 +17,11 @@
     "allowJs": true,
     "noEmit": true,
     "isolatedModules": true,
-    "baseUrl": ".",
     "paths": {
-      "@/components/*": [
-        "components/*"
-      ],
-      "@/lib/*": [
-        "lib/*"
-      ],
-      "@/styles/*": [
-        "styles/*"
-      ]
+      "@/components/*": ["./components/*"],
+      "@/lib/*": ["./lib/*"],
+      "@/styles/*": ["./styles/*"]
     },
-    "ignoreDeprecations": "6.0",
     "incremental": true,
     "esModuleInterop": true
   },
