@@ -113,6 +113,10 @@
   color: #ff0000;
 }
 
+.instagram:hover {
+  color: #e1306c;
+}
+
 .linkedin:hover {
   color: #0077b5;
 }

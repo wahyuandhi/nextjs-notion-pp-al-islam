@@ -2,10 +2,12 @@ import * as React from 'react'
 
 import * as config from '@/lib/config'
 import { GitHubIcon } from '@/lib/icons/github'
+import { InstagramIcon } from '@/lib/icons/instagram'
 import { LinkedInIcon } from '@/lib/icons/linkedin'
 import { MoonIcon } from '@/lib/icons/moon'
 import { SunIcon } from '@/lib/icons/sun'
 import { TwitterIcon } from '@/lib/icons/twitter'
+import { YoutubeIcon } from '@/lib/icons/youtube'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
 import styles from './styles.module.css'
@@ -81,6 +83,30 @@ export function FooterImpl() {
             rel='noopener noreferrer'
           >
             <LinkedInIcon />
+          </a>
+        )}
+
+        {config.youtube && (
+          <a
+            className={styles.youtube}
+            href={`https://www.youtube.com/${config.youtube}`}
+            title={`YouTube ${config.author}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <YoutubeIcon />
+          </a>
+        )}
+
+        {config.instagram && (
+          <a
+            className={styles.instagram}
+            href={`https://www.instagram.com/${config.instagram}`}
+            title={`instagram ${config.author}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <InstagramIcon />
           </a>
         )}
       </div>
